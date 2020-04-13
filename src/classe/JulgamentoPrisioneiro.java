@@ -11,7 +11,7 @@ public class JulgamentoPrisioneiro {
 			if (respostaPrisioneiroB == "Culpado") {
 				return PENA_CONDENACAO_MUTUA;
 			} else {
-				return PENA_INOCENCIA;
+				return PENA_CONDENACAO_INDIVIDUAL;
 			}
 		} else {
 			if (respostaPrisioneiroB == "Culpado") {

@@ -71,5 +71,33 @@ Erro: org.opentest4j.AssertionFailedError: expected: <5> but was: <15>
 Correção: 	private int PENA_CONDENACAO_MUTUA = 5;
 OBS- ALterei o valor da variável PENA_CONDENACAO_MUTUA para 5
 
+	@Test
+	void calculaPena_condenacaoIndividual() {
+		
+		JulgamentoPrisioneiro julgamento = new JulgamentoPrisioneiro();
+		
+		int resultadoEsperado = 10;
+		int resultadoObtido = julgamento.calculaPena("Culpado", "Inocente");
+		
+		assertEquals(resultadoEsperado, resultadoObtido);
+	}
+	
+Erro: org.opentest4j.AssertionFailedError: expected: <10> but was: <0>
+
+Correção: 	return PENA_CONDENACAO_INDIVIDUAL;
+OBS - alterei o retorno caso o prisioneiroA seja culpado e o prisioneiroB Inocente.
+
+	@Test
+	void calculaPena_condenacaoCumplices() {
+		
+		JulgamentoPrisioneiro julgamento = new JulgamentoPrisioneiro();
+		
+		int resultadoEsperado = 1;
+		int resultadoObtido = julgamento.calculaPena("Inocente", "Culpado");
+		
+		assertEquals(resultadoEsperado, resultadoObtido);
+	}
+
+Erro: 
 
 

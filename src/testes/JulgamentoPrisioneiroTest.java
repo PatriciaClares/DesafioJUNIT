@@ -35,11 +35,23 @@ class JulgamentoPrisioneiroTest {
 		
 		JulgamentoPrisioneiro julgamento = new JulgamentoPrisioneiro();
 		
-		int resultadoEsperado = 5;
-		int resultadoObtido = julgamento.calculaPena("Culpado", "Culpado");
+		int resultadoEsperado = 10;
+		int resultadoObtido = julgamento.calculaPena("Culpado", "Inocente");
 		
 		assertEquals(resultadoEsperado, resultadoObtido);
 	}
+	
+	@Test
+	void calculaPena_condenacaoCumplices() {
+		
+		JulgamentoPrisioneiro julgamento = new JulgamentoPrisioneiro();
+		
+		int resultadoEsperado = 1;
+		int resultadoObtido = julgamento.calculaPena("Inocente", "Culpado");
+		
+		assertEquals(resultadoEsperado, resultadoObtido);
+	}
+
 
 
 }
