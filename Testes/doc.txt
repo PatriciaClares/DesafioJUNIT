@@ -31,7 +31,27 @@ Erro: java.lang.Error: Unresolved compilation problem:
 Correção: public int calculaPena(String respostaPrisioneiroA, String respostaPrisioneiroB)
 OBS - Aterei o tipo dos parâmetros que o método calculaPena recebe para String.
 
+Erro: java.lang.Error: Unresolved compilation problems: 
+	Resposta cannot be resolved to a variable
+	Resposta cannot be resolved to a variable
+	Resposta cannot be resolved to a variable
+	
+Correção: if (respostaPrisioneiroA == "Culpado") {
+			if (respostaPrisioneiroB == "Culpado") {
+				return PENA_CONDENACAO_MUTUA;
+			} else {
+				return PENA_INOCENCIA;
+			}
+		} else {
+			if (respostaPrisioneiroB == "Culpado") {
 
+OBS - Alterei todos os tipos "Resposta" para uma string chamada "Culpado".
 
+Erro: org.opentest4j.AssertionFailedError: expected: <0> but was: <11>
+
+Correção: 	private int PENA_INOCENCIA = 0;
+
+				return PENA_INOCENCIA;
+OBS: Alterei o valor da váriavel PENA_INOCENCIA e no método caso os dois prisioneiros sejam "Inocentes" o valor do retorno do método é 0.
 
 
