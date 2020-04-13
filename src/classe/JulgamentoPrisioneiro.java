@@ -6,7 +6,7 @@ public class JulgamentoPrisioneiro {
 	private int PENA_CONDENACAO_INDIVIDUAL = 10;
 	private int PENA_CONDENACAO_CUMPLICES = 11;
 
-	public int calculaPena(Resposta respostaPrisioneiroA, Resposta respostaPrisioneiroB) {
+	public int calculaPena(String respostaPrisioneiroA, String respostaPrisioneiroB) {
 		if (respostaPrisioneiroA == Resposta.DELACAO) {
 			if (respostaPrisioneiroB == Resposta.DELACAO) {
 				return PENA_CONDENACAO_MUTUA;
