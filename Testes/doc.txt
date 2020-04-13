@@ -98,6 +98,13 @@ OBS - alterei o retorno caso o prisioneiroA seja culpado e o prisioneiroB Inocen
 		assertEquals(resultadoEsperado, resultadoObtido);
 	}
 
-Erro: 
+Erro: org.opentest4j.AssertionFailedError: expected: <1> but was: <10>
+Correção: 	private int PENA_CONDENACAO_CUMPLICES = 1;
+OBS- Alterei o valor da variavel PENA_CONDENACAO_CUMPLICES para 1.
+
+Erro: org.opentest4j.AssertionFailedError: expected: <1> but was: <10>
+cORREÇÃO: return PENA_CONDENACAO_CUMPLICES;
+OBS - Alterei o retorno caso o prisioneiroB seja culpado retorna PENA_CONDENACAO_CUMPLICES
+
 
 

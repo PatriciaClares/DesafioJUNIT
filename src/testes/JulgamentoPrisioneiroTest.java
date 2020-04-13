@@ -52,7 +52,5 @@ class JulgamentoPrisioneiroTest {
 		assertEquals(resultadoEsperado, resultadoObtido);
 	}
 
-
-
 }
 
