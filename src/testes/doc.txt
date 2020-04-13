@@ -1,0 +1,11 @@
+Nome:Patrícia Erica Clares Lima
+RM:82340
+
+class JulgamentoPrisioneiroTest {
+
+	@Test
+	void test() {
+		fail("Not yet implemented");
+	}
+
+}
