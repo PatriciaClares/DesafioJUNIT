@@ -19,4 +19,28 @@ class JulgamentoPrisioneiroTest {
 		assertEquals(resultadoEsperado, resultadoObtido);
 	}
 
+	@Test
+	void calculaPena_condenacaoMutua() {
+		
+		JulgamentoPrisioneiro julgamento = new JulgamentoPrisioneiro();
+		
+		int resultadoEsperado = 5;
+		int resultadoObtido = julgamento.calculaPena("Culpado", "Culpado");
+		
+		assertEquals(resultadoEsperado, resultadoObtido);
+	}
+	
+	@Test
+	void calculaPena_condenacaoIndividual() {
+		
+		JulgamentoPrisioneiro julgamento = new JulgamentoPrisioneiro();
+		
+		int resultadoEsperado = 5;
+		int resultadoObtido = julgamento.calculaPena("Culpado", "Culpado");
+		
+		assertEquals(resultadoEsperado, resultadoObtido);
+	}
+
+
 }
+

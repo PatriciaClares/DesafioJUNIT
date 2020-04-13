@@ -2,7 +2,7 @@ package classe;
 
 public class JulgamentoPrisioneiro {
 	private int PENA_INOCENCIA = 0;
-	private int PENA_CONDENACAO_MUTUA = 15;
+	private int PENA_CONDENACAO_MUTUA = 5;
 	private int PENA_CONDENACAO_INDIVIDUAL = 10;
 	private int PENA_CONDENACAO_CUMPLICES = 11;
 
